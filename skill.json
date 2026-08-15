@@ -1,0 +1,35 @@
+{
+  "name": "genpark-voice-to-action-instant-intent-dispatcher-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Voice-to-action semantic intent parser & zero-click API webhook dispatcher.",
+  "author": "genpark",
+  "category": "productivity",
+  "tags": [
+    "voice-to-action",
+    "intent-parser",
+    "webhook-dispatcher",
+    "speech-agent",
+    "ph-august-top"
+  ],
+  "inputs": {
+    "audio_command_transcript": {
+      "type": "string"
+    },
+    "available_integrations": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "dispatched_action": {
+      "type": "string"
+    },
+    "payload_parameters": {
+      "type": "object"
+    },
+    "execution_status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
